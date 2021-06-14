@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback, useState } from 'react'
+import React, { useEffect, useCallback } from 'react'
 import { useSelector, useDispatch } from "react-redux";
 import { selectUserName, selectUserAvatar, setAccountUser } from "../../features/user/userSlice";
 import { Container } from '../../Components/DashboardNav/styled.nav'
@@ -15,13 +15,11 @@ import Trending from '../../Components/Trending/Trending';
 function Dashboard() {
     const selectedUser = useSelector(selectUserName)
     const selectedAvatar = useSelector(selectUserAvatar)
-    // const selectedRecommend = useSelector(selectRecommend)
     const dispatch =  useDispatch()
     let recommends = [];
     let newDisneys = [];
     let originals = [];
     let trending = [];
-    // const [recommend, setRecommend] = useState(recommends)
 
     const setUser = useCallback(
         (user) => {
@@ -67,6 +65,8 @@ function Dashboard() {
                   case "trending":
                     trending = [...trending, { ...doc }];
                     break;
+                  default:
+
                 }
               });
               dispatch(

@@ -12,7 +12,6 @@ const movieSlice = createSlice({
   initialState,
   reducers: {
     setMovies: (state, action) => {
-        console.log(action)
       state.recommend = action.payload.recommend;
       state.newDisney = action.payload.newDisney;
       state.original = action.payload.original;
