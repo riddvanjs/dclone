@@ -1,0 +1,17 @@
+.avatarWrapper {
+    text-align: center;
+}
+
+.avatarBlock {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    padding: 0px;
+    margin: 18px;
+}
+
+.avatarBlock h3 {
+    font-family: Lato, sans-serif;
+}

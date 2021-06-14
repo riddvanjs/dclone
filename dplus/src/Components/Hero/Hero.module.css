@@ -1,0 +1,35 @@
+.logoBlock {
+  max-width: 160px;
+  width: 42%;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+}
+
+.brandsWrapper {
+    display: inline-block;
+    vertical-align: top;
+    padding: 12px;
+    transition: opacity 1s;
+    padding: 0 20px;
+}
+
+.brandsWrapper img {
+    max-width: 600px;
+    transition: transform .4s;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+  .logoBlock {
+    margin: 16px auto;
+    display: flex;
+    justify-content: center;
+  }
+}

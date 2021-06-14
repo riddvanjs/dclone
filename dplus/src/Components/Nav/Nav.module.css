@@ -1,0 +1,27 @@
+.loginBtn {
+    background-color: rgba(0,0,0,.6);
+    border: 1px solid #f9f9f9;
+    font-size: 15px;
+    padding: 8px 16px;
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #f9f9f9;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: all .2s ease 0s;
+    font-family: Lato, sans-serif;
+}
+
+.loginBtn:hover {
+  background-color: #f9f9f9;
+  color: black;
+}
